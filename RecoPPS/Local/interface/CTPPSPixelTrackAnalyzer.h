@@ -4,7 +4,6 @@
 //#define _SIMU_
 
 
-
 #include <vector>
 #include "FWCore/Framework/interface/Frameworkfwd.h"
 #include "FWCore/Framework/interface/ConsumesCollector.h"

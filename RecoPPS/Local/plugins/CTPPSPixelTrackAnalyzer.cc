@@ -1,4 +1,3 @@
-
 #include "RecoPPS/Local/interface/CTPPSPixelTrackAnalyzer.h"
 
 #include "Geometry/VeryForwardGeometryBuilder/interface/CTPPSGeometry.h"
