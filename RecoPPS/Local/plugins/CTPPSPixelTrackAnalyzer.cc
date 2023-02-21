@@ -14,7 +14,7 @@
 
 using namespace std;
 
-CTPPSPixelTrackAnalyzer:: CTPPSPixelTrackAnalyzer(const edm::ParameterSet& pset)
+CTPPSPixelTrackAnalyzer::CTPPSPixelTrackAnalyzer(const edm::ParameterSet& pset)
 // : theRPixDetTopology_(pset)
 {
 

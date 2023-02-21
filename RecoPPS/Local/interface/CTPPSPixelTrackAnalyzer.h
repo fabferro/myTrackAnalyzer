@@ -10,7 +10,7 @@
 #include "FWCore/Framework/interface/EventSetup.h"
 #include "DataFormats/Common/interface/Handle.h"
 #include "FWCore/Framework/interface/ESHandle.h"
-#include "FWCore/Framework/interface/EDAnalyzer.h"
+#include "FWCore/Framework/interface/one/EDAnalyzer.h"
 #include "FWCore/Framework/interface/Event.h"
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 #include "FWCore/ServiceRegistry/interface/Service.h"
@@ -43,7 +43,7 @@ class TGraph;
 //namespace edm {
 //  class ParameterSet; class Event; class EventSetup;}
 
-class CTPPSPixelTrackAnalyzer : public edm::EDAnalyzer{
+class CTPPSPixelTrackAnalyzer : public edm::one::EDAnalyzer<>{
   
  public:
   explicit CTPPSPixelTrackAnalyzer(const edm::ParameterSet& pset);
