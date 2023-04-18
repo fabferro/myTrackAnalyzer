@@ -525,6 +525,7 @@ void  CTPPSPixelTrackAnalyzer::analyze(const edm::Event & event, const edm::Even
 	int ii45f=0;
 	int ii56f=0;
 	if(detIdObject.arm() == 1){ 
+	  std::cout << "      Track in sector 56 " << std::endl;
 	  for ( const auto& fRH : trk.hits() ){
 	    for (const auto& ffRH : fRH ){
 	      if(ffRH.isRealHit() ){
@@ -534,6 +535,10 @@ void  CTPPSPixelTrackAnalyzer::analyze(const edm::Event & event, const edm::Even
 		  ii56f++;
 		}
 		ii56++;
+		std::cout  << ffRH.globalCoordinates().x() << " "
+			   << ffRH.globalCoordinates().y() << " "
+			   << ffRH.globalCoordinates().z() 
+			   << std::endl;
 
 		_h_fRH_56xz->Fill(ffRH.globalCoordinates().z(),ffRH.globalCoordinates().x());
 		_h_fRH_56yz->Fill(ffRH.globalCoordinates().z(),ffRH.globalCoordinates().y());
